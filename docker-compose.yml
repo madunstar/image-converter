@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  image-converter:
+    build: .
+    container_name: image-converter-app
+    restart: always
+    ports:
+      - "9000:8000"
+    environment:
+      - TZ=Asia/Makassar
